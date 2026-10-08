@@ -38,6 +38,9 @@ namespace FlowAndString
             ticketPriceCalculator = new TicketPriceCalculator();
             bool run = true;
 
+            //main program loop
+            //handles navigation and most menu logic.
+            //has some program logic in tenfold repeat and third word which should be refactored to separate classes
             while (run)
             {
                 switch (currentMenuState)

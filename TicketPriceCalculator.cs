@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace FlowAndString
 {
-    internal class TicketPriceCalculator
+    public class TicketPriceCalculator
     {
         int youthPrice = 80;
         int standardPrice = 120;
         int seniorPrice = 90;
 
-        internal string CalculateTicketPriceByAge(int age)
+        public string CalculateTicketPriceByAge(int age)
         {
             if (age < 0)
             {
@@ -74,6 +74,7 @@ namespace FlowAndString
                 }
                 else if(age >= 65 && age <= 100 )
                 {
+                    //senior
                     priceTotal += seniorPrice;
                 }
 

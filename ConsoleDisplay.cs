@@ -58,6 +58,7 @@ namespace FlowAndString
             }
         }
 
+        //show an instruction and welcome text
         private void DisplayUsageSimpleInstructions(MenuState menuState)
         {
             switch (menuState)
@@ -97,6 +98,7 @@ namespace FlowAndString
         {
             Console.Clear();
 
+            //make a nice header frame
             for (int i = 0; i < programName.Length + 6; i++)
             {
                 Console.Write("*");
@@ -117,6 +119,7 @@ namespace FlowAndString
         {
             Console.WriteLine(text);
 
+            //hold the console on current display until user input
             if (hold)
             {
                 Console.WriteLine("Press any key to continue...");
@@ -130,6 +133,7 @@ namespace FlowAndString
             {
                 if(singleLine)
                 {
+                    //print on one line
                     Console.Write($"{i + 1}: {input}");
 
                     if(i < numberOfRepeats - 1)
@@ -140,6 +144,7 @@ namespace FlowAndString
                 }
                 else
                 {
+                    //print on multiple lines
                     Console.WriteLine($"{i + 1}: {input}");
                 }
             }
